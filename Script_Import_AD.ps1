@@ -14,9 +14,9 @@
 # --- CONFIGURATION ---
 # Le script cherche le csv dans le même dossier que lui-même
 $CsvFile = "$PSScriptRoot\users.csv"
-$DomainName = "dev.serval.int"  
-$DomainDN = "DC=dev,DC=serval,DC=int" 
-$DefaultPassword = ConvertTo-SecureString "Password1!" -AsPlainText -Force
+$DomainName = "serval.int"  
+$DomainDN = "DC=serval,DC=int" 
+$DefaultPassword = ConvertTo-SecureString "Password1" -AsPlainText -Force
 
 # --- IMPORT ---
 try {
